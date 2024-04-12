@@ -9,5 +9,6 @@
 - The steps to install the extension have been completed.
 
 ## Facing Issues ? / Found a Bug ?
+
 - Contact me at vssarathc04@gmail.com
 - Raise an [Issue](https://github.com/Sarath191181208/wifi_creds_vitap/issues) in the issues tab
