@@ -1,18 +1,14 @@
 {
     "name": "Wifi creds solver",
+    "description": "Enabling students of VIT-AP to access their wifi without using their normal credentials",
     "version": "1.0.0",
     "manifest_version": 3,
     "author": "Vangipuram Srinivasa Sarath Chandra",
     "action":{
         "default_popup": "index.html"
     },
-
     "host_permissions": [
       "http://172.18.10.10:1000/"
-    ],
-    "permissions": [
-      "webRequest",
-      "tabs"
     ],
   "content_scripts": [
     {
@@ -23,6 +19,7 @@
         "http://172.18.10.10:1000/",
         "http://172.18.10.10:1000/*",
         "https://172.18.10.10:1000/*",
+        "https://172.18.10.10:1003/*",
         "<all_urls>"
       ]
     }
