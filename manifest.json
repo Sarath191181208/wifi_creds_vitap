@@ -1,0 +1,30 @@
+{
+    "name": "Wifi creds solver",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "author": "Vangipuram Srinivasa Sarath Chandra",
+    "action":{
+        "default_popup": "index.html"
+    },
+
+    "host_permissions": [
+      "http://172.18.10.10:1000/"
+    ],
+    "permissions": [
+      "webRequest",
+      "tabs"
+    ],
+  "content_scripts": [
+    {
+      "js": [
+        "js/login.js"
+      ],
+      "matches": [
+        "http://172.18.10.10:1000/",
+        "http://172.18.10.10:1000/*",
+        "https://172.18.10.10:1000/*",
+        "<all_urls>"
+      ]
+    }
+  ]
+}
